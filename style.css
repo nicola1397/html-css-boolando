@@ -18,9 +18,19 @@ body > * {
   padding-right: var(--page-gutter);
 }
 
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
 /* HEADER */
 
 header {
+  position: sticky;
+  top: 0;
   height: 80px;
   background-color: #ff6800;
   box-shadow: 0 0 5px black;
@@ -57,7 +67,6 @@ header {
 }
 
 .categories:visited {
-  text-decoration: none;
   color: white;
 }
 
@@ -81,8 +90,93 @@ header {
   background-color: rgb(255, 145, 0);
 }
 
-[class|="fa"] {
+header [class|="fa"] {
   color: white;
   height: 20px;
   margin: 10px;
+}
+
+/* PRODUCT DISPLAY */
+
+.display {
+  padding-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product {
+  width: calc(100% / 3 - 20px);
+  margin-bottom: 30px;
+}
+
+img.image {
+  display: block;
+  max-width: 100%;
+}
+
+/* CARD FORMATTING */
+
+.card-wrapper span {
+}
+
+/* Product Name-Price */
+
+.small-txt-bk {
+  font-family: var(--font1);
+  color: black;
+  font-size: 0.85rem;
+  line-height: 1rem;
+  margin-top: 5px;
+}
+
+.small-txt-red {
+  font-family: var(--font1);
+  color: red;
+  font-weight: 700;
+  font-size: 0.85rem;
+  line-height: 1rem;
+}
+
+.productname {
+  font-family: var(--font1);
+  color: black;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: block;
+}
+
+.small-txt-bk:first-of-type {
+  display: block;
+}
+
+.small-txt-bk:last-of-type {
+  text-decoration: line-through;
+}
+
+/* On top labels */
+
+.redlabel {
+  font-family: var(--font1);
+  font-weight: 700;
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+}
+
+.greenlabel {
+  font-family: var(--font1);
+  font-weight: 700;
+  background-color: green;
+  color: white;
+  padding: 5px 10px;
+}
+
+.product [class|="fa"] {
+  color: #555555;
+  font-size: x-large;
+  background-color: aliceblue;
+  padding: 10px 10px;
+  position: relative;
+  top: -550px;
 }
