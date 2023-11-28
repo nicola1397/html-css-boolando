@@ -116,7 +116,8 @@ a.card-wrapper {
   margin-top: -30px;
 }
 
-.image-flip {
+span.image-flip {
+  display: block;
   position: relative;
 }
 img.image {
