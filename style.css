@@ -34,6 +34,7 @@ header {
   height: 80px;
   background-color: #ff6800;
   box-shadow: 0 0 5px black;
+  z-index: 1;
 }
 
 .header-container {
@@ -103,11 +104,12 @@ header [class|="fa"] {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  margin-bottom: 60px;
 }
 
 .product {
   width: calc(100% / 3 - 20px);
-  margin-bottom: 30px;
+  margin-top: -30px;
 }
 
 img.image {
@@ -162,6 +164,9 @@ img.image {
   background-color: red;
   color: white;
   padding: 5px 10px;
+  position: relative;
+  top: calc(80% - 15px);
+  right: 48px;
 }
 
 .greenlabel {
@@ -170,6 +175,9 @@ img.image {
   background-color: green;
   color: white;
   padding: 5px 10px;
+  position: relative;
+  top: calc(80% - 15px);
+  right: 48px;
 }
 
 .product [class|="fa"] {
@@ -178,5 +186,10 @@ img.image {
   background-color: aliceblue;
   padding: 10px 10px;
   position: relative;
-  top: -550px;
+  top: 70px;
+  left: calc(100% - 44px);
+}
+
+.product [class|="fa"]:hover {
+  color: red;
 }
