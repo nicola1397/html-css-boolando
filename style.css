@@ -34,7 +34,7 @@ header {
   height: 80px;
   background-color: #ff6800;
   box-shadow: 0 0 5px black;
-  z-index: 1;
+  z-index: 2;
 }
 
 .header-container {
@@ -112,9 +112,29 @@ header [class|="fa"] {
   margin-top: -30px;
 }
 
+.image-flip {
+  position: relative;
+}
 img.image {
   display: block;
+  position: relative;
   max-width: 100%;
+}
+/*  Hover image */
+
+img.b-image {
+  display: block;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+}
+
+.image-flip:hover img.b-image {
+  opacity: 1;
 }
 
 /* CARD FORMATTING */
@@ -167,6 +187,7 @@ img.image {
   position: relative;
   top: calc(80% - 15px);
   right: 48px;
+  z-index: 1;
 }
 
 .greenlabel {
@@ -178,6 +199,7 @@ img.image {
   position: relative;
   top: calc(80% - 15px);
   right: 48px;
+  z-index: 1;
 }
 
 .product [class|="fa"] {
@@ -188,6 +210,7 @@ img.image {
   position: relative;
   top: 70px;
   left: calc(100% - 44px);
+  z-index: 1;
 }
 
 .product [class|="fa"]:hover {
