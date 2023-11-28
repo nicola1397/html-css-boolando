@@ -16,6 +16,7 @@
 body > * {
   padding-left: var(--page-gutter);
   padding-right: var(--page-gutter);
+  font-family: var(--font1);
 }
 
 a {
@@ -57,7 +58,6 @@ header {
 }
 
 .categories {
-  font-family: var(--font1);
   color: white;
   text-decoration: none;
   font-weight: 600;
@@ -139,13 +139,9 @@ img.b-image {
 
 /* CARD FORMATTING */
 
-.card-wrapper span {
-}
-
 /* Product Name-Price */
 
 .small-txt-bk {
-  font-family: var(--font1);
   color: black;
   font-size: 0.85rem;
   line-height: 1rem;
@@ -153,7 +149,6 @@ img.b-image {
 }
 
 .small-txt-red {
-  font-family: var(--font1);
   color: red;
   font-weight: 700;
   font-size: 0.85rem;
@@ -161,7 +156,6 @@ img.b-image {
 }
 
 .productname {
-  font-family: var(--font1);
   color: black;
   text-transform: uppercase;
   font-weight: 700;
@@ -179,7 +173,6 @@ img.b-image {
 /* On top labels */
 
 .redlabel {
-  font-family: var(--font1);
   font-weight: 700;
   background-color: red;
   color: white;
@@ -191,7 +184,6 @@ img.b-image {
 }
 
 .greenlabel {
-  font-family: var(--font1);
   font-weight: 700;
   background-color: green;
   color: white;
@@ -215,4 +207,45 @@ img.b-image {
 
 .product [class|="fa"]:hover {
   color: red;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #1a1a1a;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footertitle {
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.support {
+  color: white;
+  margin-right: 10px;
+  font-size: 0.8rem;
+}
+
+.support:hover {
+  text-decoration: underline;
+}
+
+.socialtitle {
+  color: white;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+footer [class|="fa"] {
+  color: white;
+  margin-right: 5px;
 }
