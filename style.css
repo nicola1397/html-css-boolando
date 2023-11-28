@@ -99,6 +99,10 @@ header [class|="fa"] {
 
 /* PRODUCT DISPLAY */
 
+a.card-wrapper {
+  display: block;
+}
+
 .display {
   padding-top: 60px;
   display: flex;
